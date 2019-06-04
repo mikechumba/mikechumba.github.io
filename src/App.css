@@ -1,0 +1,417 @@
+.homepage, .menupage, .workpage {
+  width: 100vw;
+  height: 100vh;
+}
+
+.container, .headertext {
+  margin: 2% 6%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.homepage {
+  background-color: #0E0E10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.forToggle {
+  opacity: 0;
+}
+
+.menupage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 4;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-flow: column-reverse wrap;
+          flex-flow: column-reverse wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menupage h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 54px;
+  font-weight: 600;
+  color: rgba(14, 14, 16, 0.9);
+}
+
+.workpage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.workpage h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 54px;
+  font-weight: 600;
+  color: rgba(14, 14, 16, 0.9);
+}
+
+.menu-icon {
+  position: fixed;
+  z-index: 10;
+  right: 6%;
+  top: 2%;
+  fill: #fff;
+  width: 28px;
+  height: 28px;
+}
+
+.menu-icon svg {
+  cursor: pointer;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.active {
+  text-decoration: line-through;
+  font-style: italic;
+}
+
+.container {
+  z-index: 1;
+}
+
+.menubg {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -4;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(32%, #0E0E10), color-stop(0%, #D10015));
+  background: linear-gradient(180deg, #0E0E10 32%, #D10015 0%);
+}
+
+.contentpanel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-flow: column-reverse wrap;
+          flex-flow: column-reverse wrap;
+  height: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contentpanel .menucontent {
+  height: 40%;
+}
+
+.contentpanel .contact {
+  height: 60%;
+}
+
+.contentpanel h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 54px;
+  font-weight: 600;
+  color: #0E0E10;
+}
+
+.menucontent a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.menucontent p {
+  margin: 5% 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.socials p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.socials a {
+  color: #141414;
+}
+
+.guides {
+  margin: 0 6%;
+  position: fixed;
+  height: 100vh;
+  width: 88%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.guides span {
+  z-index: -3;
+  height: 100%;
+  background-color: rgba(51, 51, 51, 0.2);
+  width: 1px;
+}
+
+.guides span.desktop {
+  display: none;
+}
+
+header h1 {
+  margin-top: 50%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 54px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+header p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 2;
+}
+
+.projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+}
+
+.projects, .projectcard {
+  width: 100%;
+}
+
+.projectimage {
+  width: 88vw;
+  height: 28vh;
+  overflow: hidden;
+}
+
+.projectimage img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.projectdesc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.projectdesc h4 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #0E0E10;
+}
+
+.projectdesc a {
+  margin-left: 1%;
+  color: #141414;
+}
+
+.projectlinks {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-icon {
+    top: 5%;
+  }
+  .menupage {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .menubg {
+    width: 100vw;
+    height: 100vh;
+    background: -webkit-gradient(linear, left top, right top, color-stop(71%, #D10015), color-stop(28%, #0E0E10));
+    background: linear-gradient(90deg, #D10015 71%, #0E0E10 28%);
+  }
+  .contentpanel {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+  }
+  .contentpanel .contact {
+    width: 70%;
+  }
+  .contentpanel .menucontent {
+    text-align: right;
+    width: 30%;
+  }
+  .contentpanel h1 {
+    width: 70%;
+    font-family: "Montserrat", sans-serif;
+    font-size: 70px;
+    font-weight: 600;
+    color: #0E0E10;
+  }
+  .menucontent {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+  .menucontent p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 48px;
+    font-weight: 600;
+    color: #fff;
+  }
+  .contentpanel.container {
+    margin: 0 6%;
+  }
+  .socials {
+    width: 72%;
+  }
+  .socials p > a {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #0E0E10;
+  }
+  header {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    z-index: 4;
+  }
+  header h1 {
+    margin-top: 0;
+    font-family: "Montserrat", sans-serif;
+    font-size: 70px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.9);
+  }
+  header p {
+    width: 50%;
+    line-height: 2.5;
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  .guides span {
+    z-index: -3;
+    height: 100%;
+    background-color: rgba(51, 51, 51, 0.2);
+    width: 1px;
+  }
+  .guides span.desktop {
+    display: block;
+  }
+  .projects {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .projects > div {
+    width: 49%;
+  }
+  .projectcard {
+    width: 100%;
+  }
+  .projectimage {
+    width: 100%;
+    height: 60%;
+    overflow: hidden;
+  }
+  .projectimage img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .projectlinks {
+    width: 32%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+/*# sourceMappingURL=App.css.map */

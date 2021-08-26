@@ -281,8 +281,8 @@ header p {
   .menubg {
     width: 100vw;
     height: 100vh;
-    background: -webkit-gradient(linear, left top, right top, color-stop(71%, #D10015), color-stop(28%, #0E0E10));
-    background: linear-gradient(90deg, #D10015 71%, #0E0E10 28%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(72%, #D10015), color-stop(28%, #0E0E10));
+    background: linear-gradient(90deg, #D10015 72%, #0E0E10 28%);
   }
   .contentpanel {
     display: -webkit-box;

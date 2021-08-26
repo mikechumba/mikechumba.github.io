@@ -2,10 +2,15 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
 class Menu extends Component {
+
+  // menuClick = e => {
+  //   e.preventDefault();
+  //   return this.props.toggleMenu;
+  // }
+
   render() {
     return (
       <div>
-        
         <div className="menupage">
 
           <div className="guides">
@@ -13,7 +18,7 @@ class Menu extends Component {
             <span></span>
             <span></span>
             <span></span>
-            <span class="desktop"></span>
+            <span className="desktop"></span>
           </div>
 
           <div className="menubg"></div>
@@ -23,17 +28,17 @@ class Menu extends Component {
               <div className="contact">
                 <h1>Want to work with me?</h1>
                 <div className="socials">
-                    <p><a href="mailto:michaelchumba@outlook.com" rel="noopener noreferrer" target="_blank">Email</a></p>
-                    <p><a href="linkedin.com/mikechumba" rel="noopener noreferrer" target="_blank">LinkedIn</a></p>
-                    <p><a href="github.com/mikechumba" rel="noopener noreferrer" target="_blank">Github</a></p>
-                    <p><a href="behance.net/mikekipchumba" rel="noopener noreferrer" target="_blank">Behance</a></p>
+                    <p><a href="https://mailto:michaelchumba@outlook.com" rel="noopener noreferrer" target="_blank">Email</a></p>
+                    <p><a href="https://linkedin.com/in/itsmikechumba" rel="noopener noreferrer" target="_blank">LinkedIn</a></p>
+                    <p><a href="https://github.com/mikechumba" rel="noopener noreferrer" target="_blank">Github</a></p>
+                    <p><a href="https://behance.net/michaelkipchumba" rel="noopener noreferrer" target="_blank">Behance</a></p>
                 </div>
               </div>
 
               <div className="menucontent">
-                <p><Link onClick={this.props.toggleMenu} to='/'>Home</Link></p>
-                <p><Link onClick={this.props.toggleMenu} to='/work'>Work</Link></p>
-                <p><a onClick={this.props.toggleMenu} href='https://ik.imagekit.io/bsvzrpqaj/Michael_Kipchumba_Resume_-tq82OoiP.pdf' rel="noopener noreferrer" target="_blank">Resume</a></p>
+                <p onClick={this.props.toggleMenu} onTouchStart={this.props.toggleMenu}><Link to='/'>Home</Link></p>
+                <p onClick={this.props.toggleMenu} onTouchStart={this.props.toggleMenu}><Link to='/work'>Work</Link></p>
+                <p><a href='https://ik.imagekit.io/bsvzrpqaj/Michael_Kipchumba_Resume_ZbeRNnQ1k.pdf' rel="noopener noreferrer" target="_blank">Resume</a></p>
               </div>
 
            </div>

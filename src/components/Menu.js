@@ -38,7 +38,7 @@ class Menu extends Component {
               <div className="menucontent">
                 <p onClick={this.props.toggleMenu} onTouchStart={this.props.toggleMenu}><Link to='/'>Home</Link></p>
                 <p onClick={this.props.toggleMenu} onTouchStart={this.props.toggleMenu}><Link to='/work'>Work</Link></p>
-                <p><a href='https://ik.imagekit.io/bsvzrpqaj/Michael_Kipchumba_Resume_ZbeRNnQ1k.pdf' rel="noopener noreferrer" target="_blank">Resume</a></p>
+                <p><a href='https://ik.imagekit.io/bsvzrpqaj/Michael_Kipchumba_Resume_2021_Aug_OuBH-780hl6.pdf' rel="noopener noreferrer" target="_blank">Resume</a></p>
               </div>
 
            </div>
